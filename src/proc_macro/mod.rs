@@ -186,8 +186,7 @@ fn inheritable (params: TokenStream, input: TokenStream)
         }))
     });
     render! {
-        pub(in crate)
-        trait #InheritsTrait {
+        pub trait #InheritsTrait {
             type __Parent__
                 : #Trait
             ;
